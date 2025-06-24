@@ -1,4 +1,6 @@
 package expenses.calc;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -51,5 +53,22 @@ public class Main {
         }
         scanner.close();
     }
+
+
+private static double readDouble(Scanner scanner){
+    while(true){
+        return Double.parseDouble(scanner.nextLine());
+
+    }
 }
 
+private static void saveToFile( Expense expense ){
+    try(FileWriter writer = new FileWriter("expenses.txt", true)){
+        writer.write(exoebse.tostring()+System.lineSeparator());
+    } catch(IOException e) {
+        System.out.println("Error saving to file : "+ e.getMessage());
+
+    }
+  
+    }
+}
