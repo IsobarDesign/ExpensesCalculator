@@ -1,22 +1,10 @@
-
+package expenses.calc;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-class Expense {
-    String name;
-    double amount;
 
-    Expense(String name, double amount) {
-        this.name = name;
-        this.amount = amount;
-    }
 
-    @Override
-    public String toString() {
-        return name + ": " + amount;
-    }
 
-}
 public class Main {
     public static void main(String[] args) {
         ArrayList<Expense> expenses = new ArrayList<>();
