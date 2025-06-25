@@ -1,0 +1,2 @@
+czynsz: 650.0
+zapieksa: 130.0
